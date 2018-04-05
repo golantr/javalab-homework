@@ -3,15 +3,15 @@ package lab.model.simple;
 import lab.model.Contact;
 import lab.model.Country;
 import lab.model.Person;
-import lombok.Builder;
-import lombok.Singular;
-import lombok.Value;
+import lombok.*;
 import lombok.experimental.Wither;
 
 import java.util.List;
 
+@Data
 @Builder
-@Value
+@NoArgsConstructor
+@AllArgsConstructor
 public class SimplePerson implements Person {
     String firstName;
     String lastName;

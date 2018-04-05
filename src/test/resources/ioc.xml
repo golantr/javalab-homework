@@ -1,26 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:c="http://www.springframework.org/schema/c"
        xmlns:util="http://www.springframework.org/schema/util"
+       xmlns:c="http://www.springframework.org/schema/c"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
         http://www.springframework.org/schema/util  http://www.springframework.org/schema/util/spring-util.xsd">
 
-    <bean class="lab.model.simple.SimplePerson" id="person">
-        <constructor-arg name="firstName" value="John"/>
-        <constructor-arg name="lastName" value="Smith"/>
-        <constructor-arg name="age" value="35"/>
-        <constructor-arg name="isProgrammer" value="true"/>
-        <constructor-arg name="height" value="1.78"/>
-        <constructor-arg name="broke" value="false"/>
-        <constructor-arg name="country" ref="country"/>
-        <constructor-arg name="contacts" ref="contacts"/>
-    </bean>
+    <bean id="person" class="lab.model.simple.SimplePerson"
+          c:firstName="John"
+          c:lastName="Smith"
+          c:age="35"
+          c:isProgrammer="true"
+          c:height="1.78"
+          c:broke="false"
+          c:country-ref="country"
+          c:contacts-ref="contacts"/>
 
-    <bean id="country" class="lab.model.simple.SimpleCountry">
-        <constructor-arg name="name" value="Russia"/>
-        <constructor-arg name="codeName" value="RU"/>
-    </bean>
+    <bean id="country" class="lab.model.simple.SimpleCountry"
+          c:name="Russia" c:codeName="RU"/>
 
     <util:list id="contacts" value-type="lab.model.Contact">
         <bean class="lab.model.simple.SimpleContact" c:type="EMAIL" c:value="asd@asd.ru"/>

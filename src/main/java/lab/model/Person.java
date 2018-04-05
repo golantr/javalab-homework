@@ -18,4 +18,12 @@ public interface Person {
     boolean isBroke();
 
     List<Contact> getContacts();
+
+    default String getName() {
+        return getFirstName() + " " + getLastName();
+    }
+
+    default void sayHello(Person person) {
+        System.out.printf("Hello, %s!", person.getName());
+    }
 }
