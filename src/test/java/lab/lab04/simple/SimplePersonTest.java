@@ -1,6 +1,6 @@
-package lab.model.simple;
+package lab.lab04.simple;
 
-import lab.model.Person;
+import lab.lab04.Person;
 import lombok.experimental.FieldDefaults;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.BeanFactory;

@@ -1,6 +1,6 @@
 package demo.aop;
 
-import lab.model.Person;
+import lab.lab04.Person;
 import lombok.experimental.FieldDefaults;
 
 import java.sql.SQLException;

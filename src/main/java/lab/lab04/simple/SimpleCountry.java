@@ -1,10 +1,8 @@
-package lab.model.simple;
+package lab.lab04.simple;
 
-import lab.model.Country;
-import lombok.AllArgsConstructor;
+import lab.lab04.Country;
 import lombok.Builder;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 import lombok.experimental.FieldDefaults;
 
 import static lombok.AccessLevel.PRIVATE;

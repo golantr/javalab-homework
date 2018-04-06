@@ -1,10 +1,9 @@
-package lab.model.simple;
+package lab.lab04.simple;
 
-import lab.model.Contact;
-import lab.model.Country;
-import lab.model.Person;
+import lab.lab04.Contact;
+import lab.lab04.Country;
+import lab.lab04.Person;
 import lombok.*;
-import lombok.experimental.Wither;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package lab.model;
+package lab.lab04;
 
 public interface Contact {
     String getType();

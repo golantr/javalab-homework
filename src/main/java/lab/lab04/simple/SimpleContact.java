@@ -1,6 +1,6 @@
-package lab.model.simple;
+package lab.lab04.simple;
 
-import lab.model.Contact;
+import lab.lab04.Contact;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 

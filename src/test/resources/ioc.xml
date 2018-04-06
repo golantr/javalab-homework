@@ -7,7 +7,7 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
         http://www.springframework.org/schema/util  http://www.springframework.org/schema/util/spring-util.xsd">
 
-    <bean id="person" class="lab.model.simple.SimplePerson"
+    <bean id="person" class="lab.lab04.simple.SimplePerson"
           c:firstName="John"
           c:lastName="Smith"
           c:age="35"
@@ -17,12 +17,12 @@
           c:country-ref="country"
           c:contacts-ref="contacts"/>
 
-    <bean id="country" class="lab.model.simple.SimpleCountry"
+    <bean id="country" class="lab.lab04.simple.SimpleCountry"
           c:name="Russia" c:codeName="RU"/>
 
-    <util:list id="contacts" value-type="lab.model.Contact">
-        <bean class="lab.model.simple.SimpleContact" c:type="EMAIL" c:value="asd@asd.ru"/>
-        <bean class="lab.model.simple.SimpleContact" c:type="TELEPHONE" c:value="+55 11 99999-5555"/>
+    <util:list id="contacts" value-type="lab.lab04.Contact">
+        <bean class="lab.lab04.simple.SimpleContact" c:type="EMAIL" c:value="asd@asd.ru"/>
+        <bean class="lab.lab04.simple.SimpleContact" c:type="TELEPHONE" c:value="+55 11 99999-5555"/>
     </util:list>
 
 </beans>

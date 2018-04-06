@@ -1,9 +1,9 @@
-package lab.model.simple;
+package lab.lab04.simple;
 
-import static lab.model.simple.SimplePersonTest.getExpectedPerson;
+import static lab.lab04.simple.SimplePersonTest.getExpectedPerson;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import lab.model.Person;
+import lab.lab04.Person;
 
 import lombok.AllArgsConstructor;
 import org.junit.jupiter.api.Test;
